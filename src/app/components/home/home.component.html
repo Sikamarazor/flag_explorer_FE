@@ -1,0 +1,14 @@
+<div class="home-container">
+    <div class="card-container">
+        <ng-container *ngFor="let item of countriesData">
+            <mat-card>
+                <img mat-card-image [src]="item.flags.png" alt="Flag of {{ item.flags.alt }}">
+                <mat-card-content>
+                  {{ item.region }}
+                </mat-card-content>
+            </mat-card>
+        </ng-container>
+        
+    </div>
+    <p>Home works</p>
+</div>
