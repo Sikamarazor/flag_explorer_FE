@@ -1,0 +1,20 @@
+
+<div class="card-container" *ngIf="!showDetail">
+    <ng-container *ngFor="let item of pagedCountries">
+        <mat-card (click)="viewCountry(item)">
+            <img class="img-flag" mat-card-image [src]="item.flags.png" alt="Flag of {{ item.flags.alt }}">
+            <mat-card-content>
+              {{ item.name.common }}
+            </mat-card-content>
+        </mat-card>
+    </ng-container>
+</div>
+
+<mat-paginator
+  [length]="countriesData.length"
+  [pageSize]="12"
+  [pageSizeOptions]="[6, 12, 20]"
+  (page)="onPageChange($event)">
+</mat-paginator>
+
+<app-detail *ngIf="showDetail" [countryData]="selectedCountry" (triggerEvent)="detailEvent($event)"></app-detail>
