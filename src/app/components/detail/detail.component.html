@@ -1,0 +1,21 @@
+<div class="detail-container">
+    <div class="card-container">
+        <div class="top-bar">
+          <button mat-button (click)="goBack()">Back</button>
+        </div>
+        <mat-card class="flag-card-container">
+          <div class="flag-content-wrapper">
+            <div class="flag-container">
+              <img class="img-flag" mat-card-image [src]="countryData.flags.png" alt="Flag of {{ countryData.flags.alt }}">
+            </div>
+            <div class="card-details">
+              <mat-card-content>
+                <strong><p>Name: </p></strong>{{ countryData.name.common }}<br>
+                <strong><p>Population: </p></strong>{{ countryData.population }}<br>
+                <strong><p>Capital: </p></strong>{{ countryData.capital.join(', ') }}
+              </mat-card-content>
+            </div>
+          </div>
+        </mat-card>
+      </div>      
+</div>
