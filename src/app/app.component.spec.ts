@@ -1,20 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterModule } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
+import { By } from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
 
 describe('AppComponent', () => {
   let component: AppComponent;
   let fixture: ComponentFixture<AppComponent>;
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterModule.forRoot([]),
+        RouterTestingModule,
+        AppComponent,
         MatToolbarModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      ]
     }).compileComponents();
 
     fixture = TestBed.createComponent(AppComponent);
@@ -23,9 +24,19 @@ describe('AppComponent', () => {
   });
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(component).toBeTruthy();
   });
- 
+
+  it('should render mat-toolbar', () => {
+    const toolbarDe: DebugElement = fixture.debugElement.query(By.css('mat-toolbar'));
+    expect(toolbarDe).toBeTruthy();
+  });
+
+  it('should display the title in navbar-brand', () => {
+    component.title = 'Flag app';
+    fixture.detectChanges();
+    const brand = fixture.debugElement.query(By.css('.navbar-brand')).nativeElement;
+    expect(brand.textContent).toContain('Flag app');
+  });
+
 });
