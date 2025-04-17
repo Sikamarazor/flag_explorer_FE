@@ -42,12 +42,10 @@ export class HomeComponent {
   loadCountries() {
     this.operations.getCountries().pipe(
       catchError(error => {
-        console.error('Failed to load countries:', error); // Log error for debugging.
        
         return of([]); // Return an empty array as fallback to prevent app crash.
       })
     ).subscribe((data: any) => {
-      console.log('Data:', data); // Log fetched data.
       this.countriesData = data; // Save the full list of countries.
 
       this.updatePagedData(); // Initialize paginated data for display.
