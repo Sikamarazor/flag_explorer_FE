@@ -27,8 +27,8 @@ export class HomeComponent {
 
   pagedCountries: Country[] = [];
   
-  pageSize = 10;
-  pageIndex = 0;
+  pageSize: number = 10;
+  pageIndex: number = 0;
 
   constructor(private operations: OperationsService
   ) {}
