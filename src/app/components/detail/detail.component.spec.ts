@@ -23,42 +23,6 @@ describe('DetailComponent', () => {
                 "official": "Republic of South Africa",
                 "common": "South Africa"
             },
-            "nbl": {
-                "official": "IRiphabliki yeSewula Afrika",
-                "common": "Sewula Afrika"
-            },
-            "nso": {
-                "official": "Rephaboliki ya Afrika-Borwa ",
-                "common": "Afrika-Borwa"
-            },
-            "sot": {
-                "official": "Rephaboliki ya Afrika Borwa",
-                "common": "Afrika Borwa"
-            },
-            "ssw": {
-                "official": "IRiphabhulikhi yeNingizimu Afrika",
-                "common": "Ningizimu Afrika"
-            },
-            "tsn": {
-                "official": "Rephaboliki ya Aforika Borwa",
-                "common": "Aforika Borwa"
-            },
-            "tso": {
-                "official": "Riphabliki ra Afrika Dzonga",
-                "common": "Afrika Dzonga"
-            },
-            "ven": {
-                "official": "Riphabuḽiki ya Afurika Tshipembe",
-                "common": "Afurika Tshipembe"
-            },
-            "xho": {
-                "official": "IRiphabliki yaseMzantsi Afrika",
-                "common": "Mzantsi Afrika"
-            },
-            "zul": {
-                "official": "IRiphabliki yaseNingizimu Afrika",
-                "common": "Ningizimu Afrika"
-            }
         }
     },
     "tld": [
@@ -99,117 +63,12 @@ describe('DetailComponent', () => {
     "languages": {
         "afr": "Afrikaans",
         "eng": "English",
-        "nbl": "Southern Ndebele",
-        "nso": "Northern Sotho",
-        "sot": "Southern Sotho",
-        "ssw": "Swazi",
-        "tsn": "Tswana",
-        "tso": "Tsonga",
-        "ven": "Venda",
-        "xho": "Xhosa",
-        "zul": "Zulu"
     },
     "translations": {
         "ara": {
             "official": "جمهورية جنوب أفريقيا",
             "common": "جنوب أفريقيا"
         },
-        "bre": {
-            "official": "Republik Suafrika",
-            "common": "Suafrika"
-        },
-        "ces": {
-            "official": "Jihoafrická republika",
-            "common": "Jihoafrická republika"
-        },
-        "cym": {
-            "official": "Republic of South Africa",
-            "common": "South Africa"
-        },
-        "deu": {
-            "official": "Republik Südafrika",
-            "common": "Südafrika"
-        },
-        "est": {
-            "official": "Lõuna-Aafrika Vabariik",
-            "common": "Lõuna-Aafrika Vabariik"
-        },
-        "fin": {
-            "official": "Etelä-Afrikan tasavalta",
-            "common": "Etelä-Afrikka"
-        },
-        "fra": {
-            "official": "République d'Afrique du Sud",
-            "common": "Afrique du Sud"
-        },
-        "hrv": {
-            "official": "Južnoafrička Republika",
-            "common": "Južna Afrika"
-        },
-        "hun": {
-            "official": "Dél-afrikai Köztársaság",
-            "common": "Dél-afrikai Köztársaság"
-        },
-        "ita": {
-            "official": "Repubblica del Sud Africa",
-            "common": "Sud Africa"
-        },
-        "jpn": {
-            "official": "南アフリカ共和国",
-            "common": "南アフリカ"
-        },
-        "kor": {
-            "official": "남아프리카 공화국",
-            "common": "남아프리카"
-        },
-        "nld": {
-            "official": "Republiek Zuid-Afrika",
-            "common": "Zuid-Afrika"
-        },
-        "per": {
-            "official": "جمهوری آفریقای جنوبی",
-            "common": "آفریقای جنوبی"
-        },
-        "pol": {
-            "official": "Republika Południowej Afryki",
-            "common": "Południowa Afryka"
-        },
-        "por": {
-            "official": "República da África do Sul",
-            "common": "África do Sul"
-        },
-        "rus": {
-            "official": "Южно-Африканская Республика",
-            "common": "Южная Африка"
-        },
-        "slk": {
-            "official": "Juhoafrická republika",
-            "common": "Južná Afrika"
-        },
-        "spa": {
-            "official": "República de Sudáfrica",
-            "common": "Sudáfrica"
-        },
-        "srp": {
-            "official": "Република Јужна Африка",
-            "common": "Јужноафричка Република"
-        },
-        "swe": {
-            "official": "Republiken Sydafrika",
-            "common": "Sydafrika"
-        },
-        "tur": {
-            "official": "Güney Afrika Cumhuriyeti",
-            "common": "Güney Afrika"
-        },
-        "urd": {
-            "official": "جمہوریہ جنوبی افریقا",
-            "common": "جنوبی افریقا"
-        },
-        "zho": {
-            "official": "南非共和国",
-            "common": "南非"
-        }
     },
     "latlng": [
         -29,
